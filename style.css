@@ -1,0 +1,284 @@
+/*
+Theme Name: WWB Theme
+Theme URI: https://wordpress.org/
+Author: Eyram Quashie
+Version: 1.0
+*/
+
+html,body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito';
+}
+button {
+    border: none;
+}
+
+/* header styling */
+header.site-header {
+    background-image: url(images/wwb001.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.overlay {
+    background-color: rgba(1,1,0,0.6);
+    height: 100%;
+    width: 100%;
+}
+.top-bar {
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar img, .footer-content .section-1 img {
+    height: 70px;
+    width: 70px;
+}
+.top-bar .nav .menu-item{
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: lightgrey;
+    font-weight: thin;
+    margin-left: 28px;
+    text-decoration: none;
+}
+.top-bar .menu-item:hover {
+    color: white;
+}
+.donate {
+    color: white;
+    text-decoration: none;
+    background-color: #ec228e;
+    padding: 18px 45px;
+    font-size: 20px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer
+}
+.donate:hover, .footer-content .section-3 input[type=submit]:hover {
+    background-color: rgb(182, 106, 76);
+}
+.header-content {
+    margin: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.header-content h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+.header-content .site-tagline {
+    text-align: center;
+    font-size: 25px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.header-content .donate, .site-tagline, .site-title {
+    margin-top: 20px; 
+}
+.header-content .donate {
+    margin-top: 40px;
+}
+
+/* about styling */
+.about {
+    height: 100%;
+    width: 100%;
+    background-image: url(img/logo.png);
+    background-size: 510px 530px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #66524e;
+}
+.about-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+}
+.about-container {
+    padding: 120px 100px;
+}
+.about-container .page-title {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.about-container .about-tagline {
+    font-size: 60px;
+    font-weight: 400;
+}
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.about-content .site-title {
+    font-size: 30px;
+}
+.about-text {
+    line-height: 25px;
+}
+
+/* goals styling */
+.goals {
+    height: 75vh;
+    width: 100%;
+}
+.goals-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: -40px
+}
+.goals-block h4{
+    color: #66524e;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.goals-block h2 {
+    color:#66524e;
+    font-weight: 400;
+}
+.goals-block img, .goals-block h4, .goals-block hr, .goals-block h2 {
+    margin-bottom: 10px;
+}
+.goals-block img {
+    width: 410px;
+}
+/* join styling */
+.join {
+    background-image: url(img/wwb001.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.join-overlay {
+    background-color: rgba(1,1,0,0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.join-content {
+    height: 550px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    margin-right: 90px;
+}
+.join-content h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.join-content h2 {
+    font-size: 45px;
+    font-weight: 500;
+}
+.join-btn {
+    background-color: #ec228e;
+    color: white;
+    letter-spacing: 3px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* footer styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120%;
+    width: 100%;
+    color: rgba(182, 176, 176, 0.61);
+    background-color: #873467;
+}
+footer .footer-content {
+    height: 40%;
+    padding: 100px 80px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .footer-content .section {
+    display: flex;
+    height: 100%;
+    width: 350px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .footer-content .site-tagline {
+    margin: 20px 0;
+}
+footer .footer-content .section img {
+    width: 100px;
+    height: 100px;
+}
+footer .section-1 .site-tagline {
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+.footer-content .section h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+.footer-content .section-2 {
+    letter-spacing: 1px;
+}
+.footer-content .section h4, .section-3 h4 {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+footer .footer-content .section-2 hr {
+    border: 1px solid lightgray;
+}
+.footer-content .section-3 input[type=text] {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 10px auto;
+}
+.footer-content .section-3 textarea {
+    width: 100%;
+    border: none;
+}
+.footer-content .section-3 input[type=submit] {
+    background-color: #ec228e;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+div.copyright {
+    border-top: 1px solid rgba(182, 176, 176, 0.61);
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
