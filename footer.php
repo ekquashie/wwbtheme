@@ -2,7 +2,7 @@
             <div class="footer-content">
                 <div class="section section-1">
                     <img src="<?php echo get_theme_file_uri('images/logo.png') ?>" alt="logo" class="logo">
-                    <p class="site-tagline">Supporting women personal development through Education, skills and seeking the welfare of women through diverse ways</p>
+                    <p class="site-tagline"><?php echo get_bloginfo('description');?></p>
                     <h4>Follow Us</h4>
                     <div class="social">
 

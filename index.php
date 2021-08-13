@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php 
-    $about_page = get_posts([
+    $about = get_posts([
         'name' => 'about',
         'post-type' => 'page'
     ]);
