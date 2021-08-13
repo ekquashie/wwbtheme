@@ -97,7 +97,7 @@ header.site-header {
 .about {
     height: 100%;
     width: 100%;
-    background-image: url(img/logo.png);
+    background-image: url(images/logo.png);
     background-size: 510px 530px;
     background-attachment: fixed;
     background-position: center;
@@ -163,7 +163,7 @@ header.site-header {
 }
 /* join styling */
 .join {
-    background-image: url(img/wwb001.jpeg);
+    background-image: url(images/wwb001.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;

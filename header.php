@@ -8,7 +8,7 @@
     <header class="site-header" id="home">
         <div class="overlay">
             <div class="top-bar">
-                <img src="<?php echo get_theme_file_uri('images/logo.png') ?>" alt="logo" class="logo">
+                <a href="<?php site_url(); ?>" ><img src="<?php echo get_theme_file_uri('images/logo.png') ?>" alt="logo" class="logo"></a>
                 
                 <div class="nav">
                     <a href="#home" class="menu-item">Home</a>

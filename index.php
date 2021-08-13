@@ -1,17 +1,24 @@
 <?php get_header(); ?>
 
-<div class="about" id="about">
+<?php 
+    $about_page = get_posts([
+        'name' => 'about',
+        'post-type' => 'page'
+    ]);
+    
+    $about_page = 22;
+    $about_content = get_post_field('post_content', $about_page);
+?>
+    <div class="about" id="about">
         <div class="about-overlay">
             <div class="about-container">
-                <h4 class="page-title">About Us</h4>
+                <h4 class="page-title"><?php echo get_the_title($about_page); ?></h4>
                 <h1 class="about-tagline">Confident women empowered to <br>participate in and influence <br>society in a self-determined way
                 </h1>
                 <div class="about-content">
-                    <h3 class="site-title">Women Without Borders</h3>
+                    <h3 class="site-title"><?php echo get_bloginfo('name') ?></h3>
                     <p class="about-text">
-                        Without Borders Association ( Women With Integrity) was formed on <br>17th June 2019 with a minimum of 20 people
-                        (Friends) coming together to <br>achieve one goal. Main purpose- Humanitarian Jobs Coming together to bring <br>people all over
-                        the world on board to become a big family.>
+                        <?php echo $about_content ?>
                     </p>
                 </div>
             </div>
@@ -21,19 +28,19 @@
     <div class="goals">
         <div class="goals-content">
             <div class="goals-block">
-                <img src="img/education.jpg" alt="education">
+                <img src="<?php echo get_theme_file_uri('images/education.jpg') ?>" alt="education">
                 <h4>Education</h4>
                 <hr>
                 <h2>Education programmes to <br>develop professional <br>leadership potential</h2>
             </div>
             <div class="goals-block">
-                <img src="img/welfare.jpg" alt="welfare">
+                <img src="<?php echo get_theme_file_uri('images/welfare.jpg') ?>" alt="welfare">
                 <h4>Welfare</h4>
                 <hr>
                 <h2>To seek welfare of memebrs <br>of the association</h2>
             </div>
             <div class="goals-block">
-                <img src="img/awareness.jpg" alt="awareness">
+                <img src="<?php echo get_theme_file_uri('images/awareness.jpg') ?>" alt="awareness">
                 <h4>Awareness</h4>
                 <hr>
                 <h2>Advocate for the elimination <br>of all discrimination against <br>women</h2>
